@@ -265,7 +265,7 @@ module.exports = function(grunt) {
                     convert(combine(source, f.dest, "192x192", "homescreen-192x192.png", additionalOpts));
                     grunt.log.ok();
                 }
-                
+
                 // Android Icons app
                 if (options.androidIcons) {
                     // 36x36: LDPI
@@ -300,7 +300,7 @@ module.exports = function(grunt) {
                         contentFirefox.icons = {};
                     }
 
-                    ['16', '30', '32', '48', '60', '64', '90', '120', '128', '256'].forEach(function(size) {
+                    ['16', '30', '32', '48', '60', '64', '90', '120', '128', '256', '512'].forEach(function(size) {
                         var dimensions = size + 'x' + size;
                         var dhalf = "circle "+size/2+","+size/2+" "+size/2+",1";
                         var fifname = "firefox-icon-" + dimensions + ".png";
